@@ -1,0 +1,26 @@
+{
+  "name": "reliable-data-explorer",
+  "version": "1.0.0",
+  "description": "A high-performance data explorer built with React and TypeScript",
+  "keywords": [
+    "react",
+    "typescript",
+    "data-explorer",
+    "virtualization"
+  ],
+  "homepage": "https://github.com/mohitvedwal06/reliable-data-explorer#readme",
+  "bugs": {
+    "url": "https://github.com/mohitvedwal06/reliable-data-explorer/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohitvedwal06/reliable-data-explorer.git"
+  },
+  "license": "ISC",
+  "author": "Mohit",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
