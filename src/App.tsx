@@ -4,7 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import { useVirtualizer } from "@tanstack/react-virtual";
 import { fetchOrder, fetchOrders, type ListParams } from "./api";
 import type { Order } from "./types";
-import { DEFAULTS, cities, formatDate, money, paramsToString, parseParams } from "./lib/orderUtils";
+import { cities, formatDate, money, paramsToString, parseParams } from "./lib/orderUtils";
 
 function Explorer() {
   const [searchParams, setSearchParams] = useSearchParams();
