@@ -1,6 +1,6 @@
 # Order Explorer
 
-A React + TypeScript data explorer for 12,000 mock orders.
+A React and TypeScript explorer for 12,000 mock orders.
 
 ## Run locally
 
@@ -11,16 +11,16 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:5173. The frontend runs on port 5173 and the mock API runs on port 3001.
+Open http://localhost:5173. Vite serves the frontend on port 5173 and the Express mock API on port 3001.
 
 ## Features
 
-- Search, filter, sort, and paginate orders through the API.
+- Search, filter, sort, and paginate orders.
 - Keep the current view in the URL.
-- Cancel outdated requests and debounce search input.
+- Debounce search and cancel outdated requests.
 - Virtualize table rows for smoother scrolling.
-- Open an order from a shareable detail URL.
-- Simulate API delays (200ms – 3s) and occasional failures.
+- Open order details with a shareable URL.
+- Simulate API delays and occasional failures.
 
 ## API
 
@@ -28,4 +28,6 @@ Open http://localhost:5173. The frontend runs on port 5173 and the mock API runs
 - `GET /api/orders/:id`
 - `GET /api/health`
 
-List query parameters: `q`, `status`, `city`, `sort`, `order`, `page`, and `pageSize`.
+List parameters: `q`, `status`, `city`, `sort`, `order`, `page`, and `pageSize`.
+
+On Vercel, the API is served by the functions in `api/`. Locally, the Express server in `server/` is used.
